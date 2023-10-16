@@ -1,5 +1,5 @@
 
-# Unity Project Template
+# Runtime Data Binding For Unity
 
 This repo includes Project Structure Best Practices and C# Coding Standards for Unity.
 
