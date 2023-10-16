@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement data-source="project://database/Assets/New%20Example%20Object.asset?fileID=11400000&amp;guid=b19ddcd656e3cd4428338d7213e56b26&amp;type=2#New Example Object" style="flex-grow: 1;">
+        <ui:Vector3Field label="Vec3 Field">
+            <Bindings>
+                <ui:DataBinding property="value" binding-mode="ToTarget" data-source-type="ExampleObject, Assembly-CSharp" data-source-path="vector3Value" />
+            </Bindings>
+        </ui:Vector3Field>
+        <ui:FloatField label="Float Field" value="0">
+            <Bindings>
+                <ui:DataBinding property="value" binding-mode="ToTarget" data-source-type="ExampleObject, Assembly-CSharp" data-source-path="sumOfVector3Properties" />
+            </Bindings>
+        </ui:FloatField>
+        <ui:Label text="Label">
+            <Bindings>
+                <ui:DataBinding property="text" binding-mode="ToTarget" data-source-type="ExampleObject, Assembly-CSharp" data-source-path="vector3Label" />
+            </Bindings>
+        </ui:Label>
+    </ui:VisualElement>
+</ui:UXML>
